@@ -1,0 +1,36 @@
+{
+  "name": "genpark-technical-llms-txt-generator-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Automatically generate structured LLMs.txt and config guidelines to ease LLM agent crawling.",
+  "author": "genpark",
+  "category": "seo",
+  "tags": [
+    "seo",
+    "llms-txt",
+    "crawlers",
+    "metadata",
+    "technical"
+  ],
+  "inputs": {
+    "site_name": {
+      "type": "string",
+      "description": "Name of the target website."
+    },
+    "site_description": {
+      "type": "string",
+      "description": "Site summary description."
+    },
+    "key_pages": {
+      "type": "array",
+      "description": "List of core links: [{title, url}]."
+    }
+  },
+  "outputs": {
+    "llms_txt_content": {
+      "type": "string",
+      "description": "Formated LLMs.txt content string."
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
